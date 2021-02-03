@@ -1,4 +1,4 @@
-{% set build_version = "2.4.1" %}
+{% set build_version = "2.4.3" %}
 
 package:
   name: tensorflow-text
@@ -11,7 +11,7 @@ source:
     - 0101-Build-fix-in-a-conda-environment.patch
 
 build:
-  number: 3
+  number: 1
   string: py{{ python | replace(".", "") }}_{{ PKG_BUILDNUM }}
 
 requirements:
